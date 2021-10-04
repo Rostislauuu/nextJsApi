@@ -1,0 +1,19 @@
+.header-container {
+    padding: 5px;
+    background-color: rgb(151, 151, 151);
+
+    &__links-container {
+        display: flex;
+        justify-content: space-around;
+        padding: 0;
+        list-style-type: none;
+
+        &__link {
+            color: #fff;
+        }
+    }
+}
+
+.active-link {
+    text-decoration: underline;
+}
