@@ -21,7 +21,6 @@ const CustomAccordion = (props) => {
             disabled={props.isDisabled}
             defaultExpanded={props.defaultExpanded}
             expanded={props.expanded}
-            onChange={console.log}
             square={props.square}
             className={`${classes.accordion} ${styles[props.additionalClassName]}`}
         >
