@@ -17,3 +17,20 @@ export const getSingleAnimal = async (id) => {
         return error;
     }
 }
+
+export const postMessage = async ({ message, userId }) => {
+    try {
+        const resp = await fetch("https://evening-citadel-13160.herokuapp.com/chat_rooms/1/chat_messages", {
+            method: 'POST',
+            headers: {
+              'Accept': 'application/json',
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ message: message, user_id: userId })
+          });
+
+        return resp.json();
+    } catch (error) {
+        return error;
+    }
+}
